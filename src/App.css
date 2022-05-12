@@ -44,3 +44,23 @@ body {
 .buttonWrap button:hover {
   background-color: rgb(225, 225, 225);
 }
+
+.advancedButtonWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.advancedButtonWrap button {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.advancedButtonWrap button:hover {
+  background-color: rgb(225, 225, 225);
+}
