@@ -64,3 +64,10 @@ body {
 .advancedButtonWrap button:hover {
   background-color: rgb(225, 225, 225);
 }
+
+button.button-C {
+  background-color: orange;
+}
+button.button-C:hover {
+  background-color: rgb(255, 140, 0);
+}

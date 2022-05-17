@@ -6,7 +6,7 @@ function App() {
   const [sum, setSum] = useState("");
   const [advanced, setAdvanced] = useState(false);
   const buttons = ["7","8","9","C","4","5","6","*","1","2","3","/","+","0","-","="];
-  const advancedButtons = ["7","8","9","C","(","4","5","6","x",")","1","2","3","÷","√","+","0","-",".","="]
+  const advancedButtons = ["7","8","9","(","C","4","5","6",")","x","1","2","3","√","÷","+","0","-",".","="]
 
   const handleClick = (string) => {
       if(string === "="){
@@ -32,13 +32,12 @@ function App() {
         {advanced ? 
           advancedButtons.map((button, index) => {
             return (
-              <button onClick={() => handleClick(button)} key={index}>{button}</button>
+              <button className={`button-${button}`} onClick={() => handleClick(button)} key={index}>{button}</button>
             )
           }) :
-
           buttons.map((button, index) => {
             return (
-              <button onClick={() => handleClick(button)} key={index}>{button}</button>
+              <button className={`button-${button}`} onClick={() => handleClick(button)} key={index}>{button}</button>
             )
           })
         }
